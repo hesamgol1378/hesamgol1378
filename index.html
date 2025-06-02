@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>بازارچی - اپلیکیشن فروشگاهی شما</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      direction: rtl;
+      background-color: #f3f3f3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .welcome {
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .welcome button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    a.download {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+  <script>
+    function closeWelcome() {
+      document.getElementById('welcome').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div class="welcome" id="welcome">
+    <h2>به بازارچی خوش آمدید!</h2>
+    <p>جایی برای خرید، فروش و رونق کسب‌وکار شما</p>
+    <button onclick="closeWelcome()">بریم داخل!</button>
+  </div>
+  <div class="container">
+    <h1>اپلیکیشن بازارچی</h1>
+    <p>با بازارچی، هر کسی می‌تونه محصولات خودش رو به راحتی برای هزاران نفر نمایش بده و بفروشه. این اپلیکیشن طراحی شده برای بازار ایران، با امکاناتی پیشرفته، محیطی ساده و کاربردی رو برای همه فراهم کرده.</p>
+
+    <h2>سازنده اپلیکیشن:</h2>
+    <p><strong>محمد حسام قربانی گلی</strong> | برنامه‌نویس و طراح اپلیکیشن بازارچی</p>
+
+    <h2>پیامی برای فروشندگان:</h2>
+    <p>اگر محصولی داری، بازاری داری! بازارچی دقیقا برای تو ساخته شده. دیگه نیازی به مغازه فیزیکی یا سایت گرون‌قیمت نداری. فقط محصولتو ثبت کن و منتظر خریدار باش.</p>
+
+    <h2>📅 زمان انتشار:</h2>
+    <p>نسخه اولیه اپلیکیشن روز <strong>چهارشنبه ۱۳ خرداد</strong> منتشر خواهد شد (فعلاً برای گوشی‌های اندروید).</p>
+
+    <a class="download" href="#">دانلود نسخه اندروید (به زودی)</a>
+  </div>
+</body>
+</html>
